@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1620582461 source:c:\users\easto\documents\code block\agv-e2\agv_e2\fuse.c
+	<avr/io.h>
+
