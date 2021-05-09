@@ -1,0 +1,11 @@
+
+*.eep
+*.efs
+*.elf
+*.fuse
+*.hfs
+*.lfs
+*.lock
+*.lss
+*.map
+*.sig
