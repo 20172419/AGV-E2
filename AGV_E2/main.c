@@ -13,3 +13,9 @@ int main(void)
 
     return 0;
 }
+///Ik ben jimmy (20172419)
+///Ik ben Joost (20131550)
+///Ik ben Tymen (20215924)
+///Ik ben Ian (19005962)
+///Ik ben Mattijn (20094728)
+///Ik ben Yanoah (20206925)
