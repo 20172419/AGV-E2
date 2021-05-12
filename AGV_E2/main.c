@@ -3,19 +3,31 @@
 
 #include <avr/io.h>
 
+void init(void)
+{
+    DDRC &= ~(1<<PC6);//IR Sensor pin 31
+    DDRB |= (1<<PB7);//Led displayshield PB7
+
+}
+
 int main(void)
 {
+    init();
 
     // Insert code
 
     while(1)
-    ;
+    {
+        if((PINC & (1<<PC6))==0)
+        {
+            PORTB |= (1<<PB7);
+
+        }else{
+        PORTB &= ~(1<<PB7);
+        }
+
+    }
+
 
     return 0;
 }
-///Ik ben jimmy (20172419)
-///Ik ben Joost (20131550)
-///Ik ben Tymen (20215924)
-///Ik ben Ian (19005962)
-///Ik ben Mattijn (20094728)
-///Ik ben Yanoah (20206925)
