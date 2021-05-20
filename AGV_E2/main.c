@@ -5,9 +5,8 @@
 
 void init(void)
 {
-    DDRC &= ~(1<<PC6);//IR Sensor pin 31
-    DDRB |= (1<<PB7);//Led displayshield PB7
-
+    DDRG &= ~(1<<PG1);//IR Sensor pin 40
+    DDRG |= (1<<PG0);//Led displayshield pin 41
 }
 
 int main(void)
@@ -18,16 +17,14 @@ int main(void)
 
     while(1)
     {
-        if((PINC & (1<<PC6))==0)
+        if((PING & (1<<PG1)) == 0)
         {
-            PORTB |= (1<<PB7);
-
-        }else{
-        PORTB &= ~(1<<PB7);
+            PORTG |= (1<<PG0);
         }
-
+        else
+        {
+            PORTG &= ~(1<<PG0);
+        }
     }
-
-
     return 0;
 }
